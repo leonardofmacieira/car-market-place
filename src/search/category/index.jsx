@@ -22,6 +22,8 @@ const SearchByCategory = () => {
         .innerJoin(CarImages,eq(CarListing.id,CarImages.carListingId))
         .where(eq(CarListing.category,category));
 
+        console.log(result);
+        
         const resp=Service.FormatResult(result);
         setCarList(resp);
     }
@@ -37,7 +39,7 @@ const SearchByCategory = () => {
         <h2 className='font-bold text-4xl'>{category}</h2>
 
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-7'>
-            {carList?.lenght>0? carList.map((item, index)=>(
+            {carList?.length>0? carList.map((item, index)=>(
                 <div key={index}>
                     <CardItem car={item}/>
                 </div>

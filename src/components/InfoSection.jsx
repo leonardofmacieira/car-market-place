@@ -36,7 +36,7 @@ const InfoSection = () => {
                   href="#"
                   class="mt-8 inline-block rounded border border-primary bg-white px-12 py-3 text-sm font-medium text-primary hover:bg-primary hover:text-white duration-150 focus:outline-none focus:ring active:text-indigo-500"
                 >
-                  Explore
+                  Explorar
                 </a>
               </div>
             </div>
