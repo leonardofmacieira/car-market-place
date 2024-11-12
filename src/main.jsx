@@ -33,7 +33,7 @@ const router = createBrowserRouter([
     path: '/search',
     element: <SearchByOptions/>
   },
-  {
+  { 
     path: '/search/:category',
     element: <SearchByCategory/>
   },

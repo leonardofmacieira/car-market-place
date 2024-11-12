@@ -14,9 +14,9 @@ const Header = () => {
       </Link>
       <ul className='hidden md:flex gap-16'>
         <Link to={'/'}><li className='font-medium hover:scale-110 transition-all cursor-pointer hover:text-primary'>Home</li></Link>
-        <Link to={'/'}><li className='font-medium hover:scale-110 transition-all cursor-pointer hover:text-primary'>Search</li></Link>
-        <Link to={'/'}><li className='font-medium hover:scale-110 transition-all cursor-pointer hover:text-primary'>New</li></Link>
-        <Link to={'/'}><li className='font-medium hover:scale-110 transition-all cursor-pointer hover:text-primary'>Preowned</li></Link>
+        <Link to={'/search'}><li className='font-medium hover:scale-110 transition-all cursor-pointer hover:text-primary'>Search</li></Link>
+        {/* <Link to={'/'}><li className='font-medium hover:scale-110 transition-all cursor-pointer hover:text-primary'>News</li></Link> */}
+        <Link to={'/contact'}><li className='font-medium hover:scale-110 transition-all cursor-pointer hover:text-primary'>Contact</li></Link>
       </ul>
 
       {isSignedIn?
