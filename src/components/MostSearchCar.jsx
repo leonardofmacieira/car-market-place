@@ -36,13 +36,13 @@ const MostSearchCar = () => {
   return (
     <div className="mx-24">
       <h2 className="font-bold text-3xl text-center mt-16 mb-7">
-        Mais Procurados
+        Most Search Cars
       </h2>
 
       <Carousel>
         <CarouselContent>
           {carList.map((car, index) => (
-            <CarouselItem key={index} className='basis-1/4'>
+            <CarouselItem key={index} className='basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4'>
               <CardItem car={car} />
             </CarouselItem>
           ))}

@@ -37,7 +37,7 @@ const MyListing = () => {
             <Button>+ Add New Listing</Button>
           </Link>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-7 gap-5'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-7 gap-5'>
             {carList.map((item,index)=> (
                 <div key={index}>
                     <CardItem car={item}/>

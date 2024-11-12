@@ -7,7 +7,7 @@ import { MdOutlineOpenInNew } from "react-icons/md";
 import { Link, useParams } from "react-router-dom";
 
 const CardItem = ({ car }) => {
-  
+        
   return (
     <Link to={'/listing-details/'+car?.id}>
       <div className="rounded-xl bg-white border hover:border-primary cursor-pointer">
@@ -18,21 +18,21 @@ const CardItem = ({ car }) => {
           <Separator />
           <div className="grid grid-cols-3 mt-5">
             <div className="flex flex-col items-center">
-              <LuFuel className="text-lg mb-2" />
-              <h2>{car?.mileage} Miles</h2>
+              <LuFuel className="text-sm mb-2" />
+              <h2 className="text-sm">{car?.mileage} Miles</h2>
             </div>
             <div className="flex flex-col items-center">
-              <IoSpeedometerOutline className="text-lg mb-2" />
-              <h2>{car?.fuelType}</h2>
+              <IoSpeedometerOutline className="text-sm mb-2" />
+              <h2 className="text-sm">{car?.fuelType}</h2>
             </div>
             <div className="flex flex-col items-center">
-              <GiGearStickPattern className="text-lg mb-2" />
-              <h2>{car?.transmission}</h2>
+              <GiGearStickPattern className="text-sm mb-2" />
+              <h2 className="text-sm">{car?.transmission}</h2>
             </div>
           </div>
           <Separator className="my-2" />
           <div className="flex items-center justify-between">
-            <h2 className="font-bold text-xl">${car.sellingPrice}</h2>
+            <h2 className="font-bold text-md">${car.sellingPrice}</h2>
             <h2 className="text-primary text-sm flex gap-2 items-center">
               View Details
               <MdOutlineOpenInNew />
